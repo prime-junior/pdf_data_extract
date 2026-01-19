@@ -76,8 +76,7 @@ jupyter notebook
 5. **Excel Export** - Saves processed data to Excel file
 
 ## Author
-Developed by [Weverson Barbieri de Oliveira](https://github.com/weversonbarbieri)  
-E-mail: weverson.b@mintt.com 
+Developed by [Weverson Barbieri de Oliveira](https://github.com/weversonbarbieri)
 
 ## License
 MIT
