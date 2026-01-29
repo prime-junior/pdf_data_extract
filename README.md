@@ -8,13 +8,6 @@ Python project to extract tabular data from automotive PDF files, separate relev
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-work--in--progress-yellow)
-![Project Status](https://img.shields.io/badge/status-work--in--progress-yellow?label=Project%20Status)
-![Last Commit](https://img.shields.io/github/last-commit/weversonbarbieri/pdf_data_extract?color=blue)
-![Issues](https://img.shields.io/github/issues/weversonbarbieri/pdf_data_extract)
-![Pull Requests](https://img.shields.io/github/issues-pr/weversonbarbieri/pdf_data_extract)
-![Stars](https://img.shields.io/github/stars/weversonbarbieri/pdf_data_extract?style=social)
-![Forks](https://img.shields.io/github/forks/weversonbarbieri/pdf_data_extract?style=social)
-
 
 This project automates the extraction of structured data from PDF documents, especially for multi-page documents with tables. The extracted data is cleaned, processed, and exported to CSV/Excel files.
 
@@ -23,7 +16,7 @@ This project automates the extraction of structured data from PDF documents, esp
  Table extraction
  Data consolidation and cleaning
  Extraction of Year(s), Body Code(s), and Engine Size from the 'CALIBRATION' column and placement into new separate columns
- Export of processed data
+ Export of processed data.
  Further data manipulation and analysis (to be defined in the future)
 
 
