@@ -1,83 +1,88 @@
 # PDF Data Extract
 
-A Python project for extracting tabular data from PDF files and converting it to Excel format for further analysis.
+Python project to extract tabular data from automotive PDF files, separate relevant information (year, body code, engine size), and export to CSV/Excel for analysis.
 
 ## 📋 Project Overview
 
-This project automates the extraction of structured data from PDF documents, specifically designed to handle multi-page documents with tabular information. The extracted data is cleaned, processed, and exported to Excel format.
+
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-work--in--progress-yellow)
+![Project Status](https://img.shields.io/badge/status-work--in--progress-yellow?label=Project%20Status)
+![Last Commit](https://img.shields.io/github/last-commit/weversonbarbieri/pdf_data_extract?color=blue)
+![Issues](https://img.shields.io/github/issues/weversonbarbieri/pdf_data_extract)
+![Pull Requests](https://img.shields.io/github/issues-pr/weversonbarbieri/pdf_data_extract)
+![Stars](https://img.shields.io/github/stars/weversonbarbieri/pdf_data_extract?style=social)
+![Forks](https://img.shields.io/github/forks/weversonbarbieri/pdf_data_extract?style=social)
+
+
+This project automates the extraction of structured data from PDF documents, especially for multi-page documents with tables. The extracted data is cleaned, processed, and exported to CSV/Excel files.
+
+**Main steps:**
+ PDF reading
+ Table extraction
+ Data consolidation and cleaning
+ Extraction of Year(s), Body Code(s), and Engine Size from the 'CALIBRATION' column and placement into new separate columns
+ Export of processed data
+ Further data manipulation and analysis (to be defined in the future)
+
 
 ## 🛠️ Technologies Used
 
 - **Python 3.12**
-- **pdfplumber** - PDF table extraction
-- **pandas** - Data manipulation and cleaning
-- **Jupyter Notebook** - Interactive development environment
+- **pdfplumber** – PDF table extraction
 
-## 📁 Project Structure
+
+## Features
+
+- Extracts tabular data from multi-page automotive PDF files
+- Separates and structures Year(s), Body Code(s), and Engine Size
+- Cleans and consolidates tables
+- Exports processed data to CSV/Excel
+- Modular Jupyter notebooks for each extraction step
+
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd pdf_data_extract
+   ```
+2. Create and activate the virtual environment:
+   ```bash
+   python -m venv venv
+   venv\Scripts\activate  # Windows
+   # or
+   source venv/bin/activate  # macOS/Linux
+   ```
+3. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
+## Folder Structure
 
 ```
 pdf_data_extract/
-├── pdf_extract.ipynb     # Main notebook with extraction logic
-├── pdf.pdf              # Source PDF file (ignored in Git)
-├── .gitignore           # Git ignore configuration
-├── README.md            # Project documentation
-└── venv/                # Python virtual environment
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── data/
+│   ├── year_extracted.csv
+│   ├── body_code_extracted.csv
+│   ├── engine_size_extracted.csv
+│   ├── data_extracted.csv
+│   ├── part_number.pdf
+├── notebook/
+│   ├── body_code_extraction.ipynb
+│   ├── new_pdf_extract.ipynb
+│   ├── test.ipynb
+│   ├── year_extraction.ipynb
 ```
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Python 3.12
-- Virtual environment (recommended)
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd pdf_data_extract
-```
-
-2. Create and activate virtual environment:
-```bash
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
-```
-
-3. Install dependencies:
-```bash
-pip install pdfplumber pandas jupyter
-```
-
-### Usage
-
-1. Place your PDF file in the project directory and name it `pdf.pdf`
-2. Open Jupyter Notebook:
-```bash
-jupyter notebook
-```
-3. Run `pdf_extract.ipynb` cells sequentially
-4. The cleaned data will be exported as `chrysler_pdf_to_excel.xlsx`
-
-## 📊 Data Processing Workflow
-
-1. **PDF Reading** - Opens and loads PDF document
-2. **Table Extraction** - Extracts tabular data from each page
-3. **Data Consolidation** - Combines data from all pages
-4. **Data Cleaning**:
-   - Removes duplicate headers
-   - Filters rows containing 'CALIBRATION' keyword
-   - Drops unnecessary columns (TSB(S), RECALL(S))
-   - Formats text (removes line breaks)
-5. **Excel Export** - Saves processed data to Excel file
 
 ## Author
 Developed by [Weverson Barbieri de Oliveira](https://github.com/weversonbarbieri)
 
 ## License
 MIT
-
