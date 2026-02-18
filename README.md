@@ -74,8 +74,5 @@ pdf_data_extract/
 │   ├── year_extraction.ipynb
 ```
 
-## Author
-Developed by [Weverson Barbieri de Oliveira](https://github.com/weversonbarbieri)
-
 ## License
 MIT
